@@ -1,1 +1,0 @@
-# Randle-Carpentry
