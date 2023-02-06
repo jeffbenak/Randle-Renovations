@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.header {
+    background-color: rgb(44, 21, 21);
+    height: 150px;
+}
+
+.home > p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
