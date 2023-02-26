@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,14 +15,19 @@ a {
     text-align: center;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    height: 4000px;
 }
 
 .none {
     display: none;
 }
 
-#header {
+hr {
+    opacity: 1;
+    border-top: 1px solid;
+    border-color: rgb(180, 144, 144);
+}
+
+#head {
     background-color: rgba(0, 0, 0, 0.301);
     position: fixed;
     z-index: 10000;
@@ -48,6 +57,11 @@ a {
     background-size: cover;
 }
 
+.home {
+    background-color: black;
+    color: white;
+}
+
 .home > div > p {
     width: 60%;
     margin-left: auto;
@@ -56,8 +70,8 @@ a {
 }
 
 .content {
-    color: black;
     margin-top: 5%;
+    padding-bottom:  5%;
     line-height: 2;
 }
 
@@ -70,7 +84,6 @@ a {
 }
 
 .gallery {
-    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,32 +93,37 @@ a {
     padding-top: 2%;
 }
 
-hr {
+.hrline {
     margin-top: 2%;
-    width: 47.3%;
+    width: 42.5%;
 }
 
 .finish1 {
-    padding-top: 3%;
+    padding-top: 2.5% !important;
     width: 1200px;
     height: 1100px;
 }
 
 .restfinish {
-    padding-top: 1%;
-    width: 1200px;
-    height: 1100px;
-}
-
-.restfinish1 {
-    padding-top: 2%;
     width: 1200px;
     height: 1100px;
 }
 
 .finish7 {
-    padding-top: 2%;
     height: 1100px;
+}
+
+.collapse3 {
+    width: 800px;
+    height: 1000px;
+}
+
+.gallery > img {
+    padding-top: .5%;
+}
+
+.collapsesection > img {
+    padding-top: 1%;
 }
 
 .collapsible {
@@ -115,18 +133,17 @@ hr {
     width: 1200px;
   } 
 
-  .active, .collapsible:hover {
-    color: rgba(255, 255, 255, 0.795);
-  }
-
-  .active {
-    width: 100%;
-  }
-
   .showmore {
     font-weight: 400;
     text-align: right;
     cursor: pointer;
+    margin-top: 3%;
+    width: 15%;
+    margin-left: auto;
+  }
+
+  .showmore:hover {
+    color: rgba(255, 255, 255, 0.795);
   }
 
   .dropdown {
@@ -138,4 +155,48 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .line {
+    width: 42.5%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+  }
+
+  .contact > p {
+    font-size: 20px;
+  }
+
+  
+  .content {
+    border: 3px solid white;
+    width: 41.5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+  }
+
+  .content > h2 {
+    margin-bottom: 8%;
+    margin-top: 2%;
+  }
+
+  .backtotop {
+    color: white;
+    margin-bottom: 2%;
+  }
+
+  .backtotop:hover {
+    color: rgba(255, 255, 255, 0.555);
+  }
+
+  .top {
+    padding: 2%;
   }
