@@ -48,6 +48,13 @@ hr {
     color: rgb(214, 175, 175);
 }
 
+#logo {
+  height: 120px;
+  width: 140px;
+  margin-top: 8px;
+  border-radius: 20%;
+  transition: width .5s, height .5s;
+}
 
 .aboutsection {
     padding-top: 8%;
