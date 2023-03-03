@@ -76,7 +76,6 @@ hr {
 .aboutsection > p {
   margin-top: 1%;
   text-align: left;
-
 }
 
 .home > div > p {
@@ -148,6 +147,7 @@ hr {
     color: #ffffff66;
     font-size: 15px;
     width: 1200px;
+    border: none;
   } 
 
   .showmore {
@@ -183,23 +183,24 @@ hr {
 
   .contact {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    width: 13%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 2%;
+  }
+
+  .contact > a {
+    margin-left: 1%;
   }
 
   .contact > p {
     font-size: 20px;
   }
 
-  .phone {
+  .social {
     color: white;
   }
 
-  .phone:hover {
+  .social:hover {
     color: rgb(182, 111, 64);
   }
   
@@ -208,7 +209,8 @@ hr {
     width: 41.5%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
+    padding: 0;
   }
 
   .content > h2 {

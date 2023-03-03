@@ -171,10 +171,12 @@ export default function Home() {
 {/* 
         <hr className="line"/> */}
 
+        <p>Email me <a className="email" href="mailto:MRandleCarpentry@gmail.com">here</a></p>
+
         <div className="contact">
 
-        <p><a href="tel:+17739721844" className="phone" ><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></p>
-        <p>Email me <a className="email" href="mailto:MRandleCarpentry@gmail.com">here</a></p>
+        <a href="tel:+17739721844" className="social fa-xl"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a>
+        <a href="https://www.facebook.com/mike.randle.50" className="social fa-xl"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a>
 
         </div>
 
