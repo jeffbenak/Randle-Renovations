@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CCollapse } from '@coreui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import finish1 from "../images/finish1.jpg";
 import finish2 from "../images/finish2.jpg";
 import finish3 from "../images/finish3.jpg";
@@ -41,22 +42,21 @@ export default function Home() {
         <div className="home">
               <a name='header'></a>
 
-            <div className="aboutsection">
+            <div className="intro">
+
+
+    </div>
+
+
+    <div className="aboutsection">
 
     <h2>About Us</h2>
 
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna 
-        sit amet purus gravida. Quisque sagittis purus sit amet volutpat consequat. 
-        Pulvinar pellentesque habitant morbi tristique. Sed cras ornare arcu dui 
-        vivamus arcu felis bibendum ut. 
-    </p>
-    <p>
-        Ullamcorper sit amet risus nullam eget. Porttitor eget dolor morbi non arcu risus quis 
-        varius. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Viverra 
-        orci sagittis eu volutpat. Faucibus purus in massa tempor. Vulputate eu scelerisque 
-        felis imperdiet proin fermentum.
+    Randle Carpentry was proudly founded in 2020. With over 10 years of experience in the field. 
+    We specialize in many aspects of carpentry and remodeling projects. We promise to deliver a 
+    quality finished project that you can enjoy for years to come! Please call, text, or email 
+    to get your project started!
     </p>
 
     </div>
@@ -173,8 +173,8 @@ export default function Home() {
 
         <div className="contact">
 
-        <p><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> 708-444-4444</p>
-        <p>Email me <a className="email" href="mailto:name@email.com">here</a></p>
+        <p><a href="tel:+17739721844" className="phone" ><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></p>
+        <p>Email me <a className="email" href="mailto:MRandleCarpentry@gmail.com">here</a></p>
 
         </div>
 

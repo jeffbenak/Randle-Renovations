@@ -56,7 +56,7 @@ hr {
   transition: width .5s, height .5s;
 }
 
-.aboutsection {
+.intro {
     padding-top: 8%;
     height: 2000px;
     background-image: url('../images/carpentry.jpg');
@@ -69,8 +69,18 @@ hr {
     color: white;
 }
 
+.aboutsection {
+  margin-top: 2%;
+}
+
+.aboutsection > p {
+  margin-top: 1%;
+  text-align: left;
+
+}
+
 .home > div > p {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
@@ -175,12 +185,23 @@ hr {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 13%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contact > p {
     font-size: 20px;
   }
 
+  .phone {
+    color: white;
+  }
+
+  .phone:hover {
+    color: rgb(182, 111, 64);
+  }
   
   .content {
     border: 3px solid white;
