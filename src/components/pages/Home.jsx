@@ -25,7 +25,7 @@ import finish19 from "../images/finish19.jpg";
 
 
 
-export default function Home() {
+export default function Home({ currentPage, handlePageChange }) {
 
     const [visibleone, setVisibleOne] = useState(false);
     const [visibletwo, setVisibleTwo] = useState(false);
@@ -42,11 +42,6 @@ export default function Home() {
         <div className="home">
               <a name='header'></a>
 
-            <div className="intro">
-
-
-    </div>
-
 
     <div className="aboutsection">
 
@@ -61,10 +56,10 @@ export default function Home() {
 
     </div>
 
-    <div className="gallery">
 
+    {/* <div className="gallery">
+        
 
-        <h1>Gallery</h1>
 
         <hr className="hrline"></hr>
 
@@ -163,7 +158,7 @@ export default function Home() {
 
         
 
-    </div>
+    </div> */}
 
     <div className="content">
 

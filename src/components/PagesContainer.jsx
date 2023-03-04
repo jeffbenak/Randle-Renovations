@@ -3,15 +3,15 @@ import Header from "./pages/Header";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 
-export default function PortfolioContainer() {
+export default function PagesContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home />;
-    }
     if (currentPage === "Gallery") {
       return <Gallery />;
+    }
+    if (currentPage === "Home") {
+      return <Home />;
     }
   };
 

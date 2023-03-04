@@ -31,9 +31,48 @@ export default function Header({ currentPage, handlePageChange }) {
         <>
         <div id="head">
 
+            <div className="navlist">
 
-            <a href="#home"><img id="logo" src={Logo}></img></a>
+            <ul className="nav nav-tabs">
 
+                <li className="nav-item">
+
+
+            <a href="#home" onClick={() => handlePageChange("Home")}
+            className={currentPage === "Home" ? "nav-link nav-tabs active" : "nav-link nav-tabs"}>
+       
+            Home
+            </a>
+
+            </li>
+
+            <li className="nav-item">
+
+            <img id="logo" src={Logo}></img>
+
+            </li>
+
+            <li className="nav-item">
+
+            
+                <a
+
+            href="#gallery"
+            onClick={() => handlePageChange("Gallery")}
+            className={currentPage === "Gallery" ? "nav-link active" : "nav-link"}
+            >
+            Gallery
+
+                </a>
+
+                </li>
+
+                </ul>
+
+            </div>
+
+
+    
 
         </div>
         </>
