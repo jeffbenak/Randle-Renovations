@@ -53,7 +53,7 @@ export default function Home() {
     <h2>About Us</h2>
 
     <p>
-    Randle Carpentry was proudly founded in 2020. With over 10 years of experience in the field. 
+    Randle Carpentry was proudly founded in 2020, with over 10 years of experience in the field. 
     We specialize in many aspects of carpentry and remodeling projects. We promise to deliver a 
     quality finished project that you can enjoy for years to come! Please call, text, or email 
     to get your project started!
@@ -168,15 +168,12 @@ export default function Home() {
     <div className="content">
 
         <h2>Contact Us</h2>
-{/* 
-        <hr className="line"/> */}
-
-        <p>Email me <a className="email" href="mailto:MRandleCarpentry@gmail.com">here</a></p>
 
         <div className="contact">
 
-        <a href="tel:+17739721844" className="social fa-xl"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a>
-        <a href="https://www.facebook.com/mike.randle.50" className="social fa-xl"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a>
+        <p>Email: <a className="email" href="mailto:MRandleCarpentry@gmail.com">MRandleCarpentry@gmail.com</a></p>
+        <p><FontAwesomeIcon className="fa-xl" icon={faPhone}></FontAwesomeIcon><a href="tel:+17739721844" className="social">773-972-1844</a></p>
+        <p><FontAwesomeIcon className="fa-xl" icon={faFacebook}></FontAwesomeIcon><a href="https://www.facebook.com/profile.php?id=100077916173261" className="social facebook">Randle Carpentry</a></p>
 
         </div>
 
@@ -190,10 +187,9 @@ export default function Home() {
 
     </div>
 
-    <div className="space">
+    <p className="copyright">Copyright &#169; 2023 Randle Carpentry. All Rights Reserved. </p>
 
-
-    </div>
+ 
 
     </div>
     )

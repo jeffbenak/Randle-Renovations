@@ -49,10 +49,10 @@ hr {
 }
 
 #logo {
-  height: 120px;
+  height: 130px;
   width: 140px;
-  margin-top: 8px;
-  border-radius: 20%;
+  margin-top: 5px;
+  border-radius: 50%;
   transition: width .5s, height .5s;
 }
 
@@ -83,6 +83,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
+    font-size: 18px;
 }
 
 .content {
@@ -96,7 +97,7 @@ hr {
 }
 
 .email:hover {
-    color: rgb(182, 111, 64);
+  color: rgb(44, 82, 248);
 }
 
 .gallery {
@@ -183,25 +184,28 @@ hr {
 
   .contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 15%;
+    align-items: center;
+    margin-top: 10%;
     margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .contact > a {
-    margin-left: 1%;
-  }
 
   .contact > p {
-    font-size: 20px;
+    font-size: 18px;
+    width: 100%;
   }
 
   .social {
     color: white;
+    margin-left: 1%;
   }
 
   .social:hover {
-    color: rgb(182, 111, 64);
+    color: rgb(44, 82, 248);
   }
   
   .content {
@@ -216,6 +220,7 @@ hr {
   .content > h2 {
     margin-bottom: 8%;
     margin-top: 2%;
+    font-family: 'Tilt Warp', cursive;
   }
 
   .backtotop {
@@ -229,4 +234,8 @@ hr {
 
   .top {
     padding: 2%;
+  }
+
+  .copyright {
+    padding-bottom: 1.5%;
   }
