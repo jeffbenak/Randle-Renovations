@@ -174,13 +174,6 @@ export default function Home({ currentPage, handlePageChange }) {
 
     </div>
 
-    <div className="top">
-
-    <p>
-        <a className='backtotop' href='#header'>Back to the top</a>
-    </p>
-
-    </div>
 
     <p className="copyright">Copyright &#169; 2023 Randle Carpentry. All Rights Reserved. </p>
 
