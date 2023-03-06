@@ -18,15 +18,28 @@ import finish16 from "../images/finish16.jpg";
 import finish17 from "../images/finish17.jpg";
 import finish18 from "../images/finish18.jpg";
 import finish19 from "../images/finish19.jpg";
+import finish20 from "../images/finish20.jpg";
+import finish21 from "../images/finish21.jpg";
+import finish22 from "../images/finish22.jpg";
+import finish23 from "../images/finish23.jpg";
+import finish24 from "../images/finish24.jpg";
+import finish25 from "../images/finish25.jpg";
+import finish26 from "../images/finish26.jpg";
+import finish27 from "../images/finish27.jpg";
+import finish28 from "../images/finish28.jpg";
+import finish29 from "../images/finish29.jpg";
 
 
 export default function Gallery() {
 
     return (
+        <>
+        
         <div className="gallery">
-             <a name='header'></a>
+        <a name="header"></a>
 
             <h1>Gallery</h1>
+
 
             <hr className="hrline"></hr>
 
@@ -64,8 +77,22 @@ export default function Gallery() {
                 </div>
                 <div className="column">
                     <img src={finish19}></img>
-                    <img src={finish5}></img>
-                    <img src={finish6}></img>
+                    <img src={finish20}></img>
+                    <img src={finish21}></img>
+                </div>
+                <div className="column">
+                    <img src={finish22}></img>
+                    <img src={finish23}></img>
+                    <img src={finish24}></img>
+                </div>
+                <div className="column">
+                    <img src={finish25}></img>
+                    <img src={finish26}></img>
+                    <img src={finish27}></img>
+                </div>
+                <div className="column">
+                    <img src={finish28}></img>
+                    <img src={finish29}></img>
                 </div>
 
             </div>
@@ -78,9 +105,10 @@ export default function Gallery() {
 
     </div>
 
-    <p className="copyright">Copyright &#169; 2023 Randle Carpentry. All Rights Reserved. </p>
+    <p className="copyrightgallery">Copyright &#169; 2023 Randle Carpentry. All Rights Reserved. </p>
 
         </div>
+        </>
     )
 
 }
