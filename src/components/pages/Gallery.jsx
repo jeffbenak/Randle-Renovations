@@ -48,50 +48,60 @@ export default function Gallery() {
                 <div className="column">
                     <img src={finish1}></img>
                     <img src={finish2}></img>
-                    <img src={finish3}></img>
                 </div>
                 <div className="column">
+                    <img src={finish3}></img>
                     <img src={finish4}></img>
+                </div>
+                <div className="column">
                     <img src={finish5}></img>
                     <img src={finish6}></img>
                 </div>
                 <div className="column">
                     <img src={finish7}></img>
                     <img src={finish8}></img>
-                    <img src={finish9}></img>
                 </div>
                 <div className="column">
+                    <img src={finish9}></img>
                     <img src={finish10}></img>
+                </div>
+                <div className="column">
                     <img src={finish11}></img>
                     <img src={finish12}></img>
                 </div>
                 <div className="column">
                     <img src={finish13}></img>
                     <img src={finish14}></img>
-                    <img src={finish15}></img>
                 </div>
                 <div className="column">
+                    <img src={finish15}></img>
                     <img src={finish16}></img>
+                </div>
+                <div className="column">
                     <img src={finish17}></img>
                     <img src={finish18}></img>
                 </div>
                 <div className="column">
                     <img src={finish19}></img>
                     <img src={finish20}></img>
-                    <img src={finish21}></img>
                 </div>
                 <div className="column">
+                    <img src={finish21}></img>
                     <img src={finish22}></img>
+                </div>
+                <div className="column">
                     <img src={finish23}></img>
                     <img src={finish24}></img>
                 </div>
                 <div className="column">
                     <img src={finish25}></img>
                     <img src={finish26}></img>
-                    <img src={finish27}></img>
                 </div>
                 <div className="column">
+                    <img src={finish27}></img>
                     <img src={finish28}></img>
+                </div>
+                <div className="column">
                     <img src={finish29}></img>
                 </div>
 
