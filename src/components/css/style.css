@@ -39,28 +39,33 @@ hr {
     right: 0px;
     transition: top 0.5s;
     height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
-.navlist {
-  width: 100%;
-}
-
-.nav {
-  width: 100%;
-  justify-content: space-around;
+.nav-items {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.navbar > .container {
+  display: block !important;
+}
+
+.navbar-toggler {
+  margin-left: 95%;
 }
 
 .nav-tabs {
   --bs-nav-tabs-border-width: 0;
   border-bottom: none !important;
+  border-top: 0 !important;
 }
 
 .nav-tabs .nav-link {
     border-top-right-radius: 0;
+    border: 0;
+    border-top: 0;
     color: white;
 }
 
@@ -78,6 +83,10 @@ hr {
   margin-top: 5px;
   border-radius: 50%;
   transition: width .5s, height .5s;
+}
+
+.navlogo {
+  height: 0;
 }
 
 .home {
@@ -106,10 +115,6 @@ hr {
 
 .email:hover {
   color: rgb(44, 82, 248);
-}
-
-.gallery > h1 {
-    padding-top: 3%;
 }
 
 .hrline {
@@ -175,10 +180,6 @@ hr {
     color: rgba(255, 255, 255, 0.555);
   }
 
-  .top {
-    padding: 2%;
-  }
-
   .copyright {
     margin-top: 10%;
     padding-bottom: 1.5%;
@@ -189,14 +190,15 @@ hr {
   /* GALLERY PAGE CSS */
 
   .gallery > h1 {
-    margin-top: 5%;
-  }
+    padding-top: 200px;
+}
 
   .row {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 3%;
+    --bs-gutter-x: 0;
   }
 
   .column img {
@@ -207,5 +209,9 @@ hr {
   }
 
   .copyrightgallery {
-    padding-bottom: 1.5%;
+    padding-bottom: 40px;
+  }
+
+  .top {
+    padding: 40px;
   }

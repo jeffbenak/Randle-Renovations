@@ -1,5 +1,8 @@
 import React from "react";
 import Logo from "../logo/logo.jpg";
+import { Container, NavItem } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 export default function Header({ currentPage, handlePageChange }) {
 
@@ -28,14 +31,39 @@ export default function Header({ currentPage, handlePageChange }) {
     }
 
     return (
-        <>
-        <div id="head">
+    <>
+    <div id="head">
 
-            <div className="navlist">
+        {/* <div className="navlist"> */}
 
+        <NavItem className="navlogo">
+                    <img id="logo" src={Logo}></img>
+                    </NavItem>
+
+            <Navbar expand="lg" className="navbar-light">
+
+                
+    
+
+
+            <Container className="navbar-container">
+
+                <Nav variant="tabs" className="nav-tabs .d-lg-flex">
+
+                  
+
+                
+
+            {/* 
             <ul className="nav nav-tabs">
 
-                <li className="nav-item">
+                <li className="nav-item"> */}
+
+                <Navbar.Collapse>
+
+                <div className="nav-items">
+
+                <NavItem>
 
 
             <a href="#home" onClick={() => handlePageChange("Home")}
@@ -44,15 +72,21 @@ export default function Header({ currentPage, handlePageChange }) {
             Home
             </a>
 
-            </li>
+            </NavItem>
 
-            <li className="nav-item">
+            {/* </li>
 
-            <img id="logo" src={Logo}></img>
+             <li className="nav-item">  */}
 
-            </li>
 
-            <li className="nav-item">
+
+
+
+            {/* </li>
+
+            <li className="nav-item"> */}
+
+            <NavItem>
 
             
                 <a
@@ -65,16 +99,37 @@ export default function Header({ currentPage, handlePageChange }) {
 
                 </a>
 
-                </li>
+                </NavItem>
 
-                </ul>
+                {/* </li>
 
-            </div>
+                </ul> */}
+
+                </div>
+
+                </Navbar.Collapse>
 
 
-    
+            </Nav>
+
+        
+
+        <div className="hidden-lg navbar-dark pull-left">
+
+
+        <Navbar.Toggle />
+
 
         </div>
-        </>
+       
+
+        </Container>
+
+        </Navbar>
+
+    {/* </div> */}
+
+    </div>
+</>
     )
 }
