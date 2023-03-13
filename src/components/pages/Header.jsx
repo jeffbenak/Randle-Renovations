@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "../logo/logo.jpg";
 import { Container, NavItem } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
@@ -6,10 +6,27 @@ import { Navbar } from 'react-bootstrap';
 
 export default function Header({ currentPage, handlePageChange }) {
 
+    const [show, setShow] = useState(false);
+
     window.onscroll = function() {
         scroll();
-        animate();
+        // animate();
     };
+
+    function registerClick() {
+        if (registerClick) {
+            console.log('success');
+            document.querySelector(".show").style.left = "-100%";    
+        }
+    };
+
+    function showNavigation() {
+        if (showNavigation) {
+            document.querySelector(".show").style.left = "0";
+            document.querySelector(".collapsing").style.height = "100vh";
+            document.getElementById("popout").className = "scrolled"; 
+        }  
+    }
 
     function scroll() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -26,7 +43,7 @@ export default function Header({ currentPage, handlePageChange }) {
             }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
                 document.getElementById("logo").style.width = "140px"; document.getElementById("logo").style.height = "120px";
                 document.getElementById("logo").style.marginTop = "10px";
-            } 
+            }
         
     }
 
@@ -42,10 +59,6 @@ export default function Header({ currentPage, handlePageChange }) {
 
             <Navbar expand="lg" className="navbar-light">
 
-                
-    
-
-
             <Container className="navbar-container">
 
                 <Nav variant="tabs" className="nav-tabs .d-lg-flex">
@@ -53,20 +66,24 @@ export default function Header({ currentPage, handlePageChange }) {
                   
 
                 
+                <Navbar.Collapse className="show" id="popout">
+            
+            <ul>
 
-            {/* 
-            <ul className="nav nav-tabs">
+            <div className="nav-items">
 
-                <li className="nav-item"> */}
+                <li> 
 
-                <Navbar.Collapse>
+             
 
-                <div className="nav-items">
+              
 
                 <NavItem>
 
 
-            <a href="#home" onClick={() => handlePageChange("Home")}
+            <a href="#home" onClick={() => 
+            {registerClick();
+            handlePageChange("Home");}}
             className={currentPage === "Home" ? "nav-link nav-tabs active" : "nav-link nav-tabs"}>
        
             Home
@@ -74,17 +91,17 @@ export default function Header({ currentPage, handlePageChange }) {
 
             </NavItem>
 
-            {/* </li>
+             </li>
 
-             <li className="nav-item">  */}
-
-
+             <li> 
 
 
 
-            {/* </li>
 
-            <li className="nav-item"> */}
+
+             </li>
+
+            <li> 
 
             <NavItem>
 
@@ -92,7 +109,9 @@ export default function Header({ currentPage, handlePageChange }) {
                 <a
 
             href="#gallery"
-            onClick={() => handlePageChange("Gallery")}
+            onClick={() => 
+            {registerClick();
+            handlePageChange("Gallery");}}
             className={currentPage === "Gallery" ? "nav-link active" : "nav-link"}
             >
             Gallery
@@ -101,11 +120,15 @@ export default function Header({ currentPage, handlePageChange }) {
 
                 </NavItem>
 
-                {/* </li>
-
-                </ul> */}
+                </li>
 
                 </div>
+
+                 
+
+                </ul> 
+
+             
 
                 </Navbar.Collapse>
 
@@ -114,10 +137,10 @@ export default function Header({ currentPage, handlePageChange }) {
 
         
 
-        <div className="hidden-lg navbar-dark pull-left">
+        <div className="toggler hidden-lg navbar-dark pull-left">
 
 
-        <Navbar.Toggle />
+        <Navbar.Toggle onClick={showNavigation}/>
 
 
         </div>
