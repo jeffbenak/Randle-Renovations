@@ -10,7 +10,7 @@ export default function Header({ currentPage, handlePageChange }) {
 
     window.onscroll = function() {
         scroll();
-        // animate();
+        animate();
     };
 
     function registerClick() {
@@ -38,11 +38,11 @@ export default function Header({ currentPage, handlePageChange }) {
 
     function animate() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("logo").style.width = "110px"; document.getElementById("logo").style.height = "90px";
-            document.getElementById("logo").style.marginTop = "10px";
+            document.getElementById("logo").style.width = "110px"; document.getElementById("logo").style.height = "100px";
+            // document.getElementById("logo").style.marginTop = "30px";
             }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
-                document.getElementById("logo").style.width = "140px"; document.getElementById("logo").style.height = "120px";
-                document.getElementById("logo").style.marginTop = "10px";
+                document.getElementById("logo").style.width = "120px"; document.getElementById("logo").style.height = "110px";
+                // document.getElementById("logo").style.marginTop = "10px";
             }
         
     }
