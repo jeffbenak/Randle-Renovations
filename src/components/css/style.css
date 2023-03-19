@@ -33,7 +33,7 @@ hr {
 }
 
 #head {
-    background-color: rgba(36, 29, 29, 0.178);
+    background-color: #241d1d2d;
     position: fixed;
     z-index: 10000;
     left: 0px;
@@ -47,6 +47,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-size: 20px;
 }
 
 .navbar > .container {
@@ -65,20 +66,15 @@ hr {
 }
 
 .nav-tabs {
-  --bs-nav-tabs-border-width: 0;
-  border-bottom: none !important;
-  border-top: 0 !important;
+  border-bottom: transparent !important;
 }
 
 .nav-tabs .nav-link {
-    border-top-right-radius: 0;
-    border: 0;
-    border-top: 0;
     color: white;
 }
 
 .nav-link:hover {
-  color: #a1a1a1;
+  border-color: rgb(255, 255, 255) !important;
 }
 
 #header > a {

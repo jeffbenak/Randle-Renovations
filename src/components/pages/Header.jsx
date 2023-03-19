@@ -32,17 +32,22 @@ export default function Header({ currentPage, handlePageChange }) {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("head").style.top = "-20px";
         }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
-            document.getElementById("head").style.top = "0";
+            document.getElementById("head").style.top = "0"; document.getElementById("logo").style.height = "110px";
+            document.getElementById("logo").style.width = "120px";
         } 
     }
 
     function animate() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("logo").style.width = "110px"; document.getElementById("logo").style.height = "100px";
-            // document.getElementById("logo").style.marginTop = "30px";
+            document.querySelector(".nav-link").style.fontSize = "16px";
+            document.querySelector(".active").style.fontSize = "16px";
+            document.querySelector(".nav-link").style.transition = ".5s ease-in-out";
+            document.querySelector(".active").style.transition = ".5s ease-in-out";
             }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
                 document.getElementById("logo").style.width = "120px"; document.getElementById("logo").style.height = "110px";
-                // document.getElementById("logo").style.marginTop = "10px";
+                document.querySelector(".nav-link").style.fontSize = "20px";
+                document.querySelector(".active").style.fontSize = "20px";
             }
         
     }
@@ -84,7 +89,7 @@ export default function Header({ currentPage, handlePageChange }) {
             <a href="#home" onClick={() => 
             {registerClick();
             handlePageChange("Home");}}
-            className={currentPage === "Home" ? "nav-link nav-tabs active" : "nav-link nav-tabs"}>
+            className={currentPage === "Home" ? "nav-link active" : "nav-link"}>
        
             Home
             </a>
