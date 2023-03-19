@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { CCollapse } from '@coreui/react';
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';

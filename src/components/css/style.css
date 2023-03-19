@@ -39,7 +39,7 @@ hr {
     left: 0px;
     right: 0px;
     transition: top 0.5s;
-    height: 150px;
+    height: 140px;
 }
 
 .nav-items {
@@ -71,6 +71,8 @@ hr {
 
 .nav-tabs .nav-link {
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: .4s ease-in-out;
 }
 
 .nav-link:hover {
@@ -82,11 +84,11 @@ hr {
 }
 
 #logo {
-  height: 110px;
-  width: 120px;
-  margin-top: 28px;
+  height: 105px;
+  width: 115px;
+  margin-top: 10px;
   border-radius: 50%;
-  transition: width .5s, height .5s;
+  transition: width .4s, height .4s;
 }
 
 .navlogo {
@@ -184,6 +186,7 @@ hr {
 
   .copyright {
     margin-top: 250px;
+    padding-bottom: 5%;
   }
 
 
@@ -210,7 +213,7 @@ hr {
   }
 
   .copyrightgallery {
-    padding-bottom: 40px;
+    padding-bottom: 5%;
   }
 
   .top {

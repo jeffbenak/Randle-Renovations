@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import Logo from "../logo/logo.jpg";
 import { Container, NavItem } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
@@ -6,16 +6,12 @@ import { Navbar } from 'react-bootstrap';
 
 export default function Header({ currentPage, handlePageChange }) {
 
-    const [show, setShow] = useState(false);
-
     window.onscroll = function() {
         scroll();
-        animate();
     };
 
     function registerClick() {
         if (registerClick) {
-            console.log('success');
             document.querySelector(".show").style.left = "-100%";    
         }
     };
@@ -30,33 +26,28 @@ export default function Header({ currentPage, handlePageChange }) {
 
     function scroll() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("head").style.top = "-20px";
-        }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
-            document.getElementById("head").style.top = "0"; document.getElementById("logo").style.height = "110px";
-            document.getElementById("logo").style.width = "120px";
-        } 
-    }
-
-    function animate() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("logo").style.width = "110px"; document.getElementById("logo").style.height = "100px";
+            document.getElementById("head").style.top = "-25px";
+            document.getElementById("logo").style.width = "100px"; 
+            document.getElementById("logo").style.height = "90px";
             document.querySelector(".nav-link").style.fontSize = "16px";
             document.querySelector(".active").style.fontSize = "16px";
             document.querySelector(".nav-link").style.transition = ".5s ease-in-out";
             document.querySelector(".active").style.transition = ".5s ease-in-out";
-            }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
-                document.getElementById("logo").style.width = "120px"; document.getElementById("logo").style.height = "110px";
-                document.querySelector(".nav-link").style.fontSize = "20px";
-                document.querySelector(".active").style.fontSize = "20px";
-            }
-        
+            document.querySelector(".nav-item").style.marginTop = "25px";
+            document.querySelector(".nav-item").style.transition = ".4s ease-in-out";
+        }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
+            document.getElementById("head").style.top = "0"; 
+            document.getElementById("logo").style.height = "110px";
+            document.getElementById("logo").style.width = "120px";
+            document.querySelector(".nav-link").style.fontSize = "20px";
+            document.querySelector(".active").style.fontSize = "20px";
+            document.querySelector(".nav-item").style.marginTop = "0";
+        } 
     }
 
     return (
     <>
     <div id="head">
-
-        {/* <div className="navlist"> */}
 
         <NavItem className="navlogo">
                     <img id="logo" src={Logo}></img>
@@ -67,9 +58,6 @@ export default function Header({ currentPage, handlePageChange }) {
             <Container className="navbar-container">
 
                 <Nav variant="tabs" className="nav-tabs .d-lg-flex">
-
-                  
-
                 
                 <Navbar.Collapse className="show" id="popout">
             
@@ -78,10 +66,6 @@ export default function Header({ currentPage, handlePageChange }) {
             <div className="nav-items">
 
                 <li> 
-
-             
-
-              
 
                 <NavItem>
 
@@ -100,17 +84,12 @@ export default function Header({ currentPage, handlePageChange }) {
 
              <li> 
 
-
-
-
-
              </li>
 
             <li> 
 
             <NavItem>
-
-            
+           
                 <a
 
             href="#gallery"
@@ -129,13 +108,9 @@ export default function Header({ currentPage, handlePageChange }) {
 
                 </div>
 
-                 
-
                 </ul> 
 
-             
-
-                </Navbar.Collapse>
+              </Navbar.Collapse>
 
 
             </Nav>
@@ -154,8 +129,6 @@ export default function Header({ currentPage, handlePageChange }) {
         </Container>
 
         </Navbar>
-
-    {/* </div> */}
 
     </div>
 </>
