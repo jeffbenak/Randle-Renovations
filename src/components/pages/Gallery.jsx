@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import finish1 from "../images/finish1.jpg";
 import finish2 from "../images/finish2.jpg";
 import finish3 from "../images/finish3.jpg";

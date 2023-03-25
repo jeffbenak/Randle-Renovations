@@ -22,6 +22,10 @@ ul {
     color: rgb(255, 255, 255);
 }
 
+.show {
+  display: inline-block;
+}
+
 .none {
     display: none;
 }
@@ -186,10 +190,8 @@ hr {
 
   .copyright {
     margin-top: 250px;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   }
-
-
 
   /* GALLERY PAGE CSS */
 
@@ -213,7 +215,7 @@ hr {
   }
 
   .copyrightgallery {
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   }
 
   .top {
