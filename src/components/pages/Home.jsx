@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { Link } from "react-router-dom";
+import finish11 from "../images/finish11.jpg";
+import finish13 from "../images/finish13.jpg";
+import finish28 from "../images/finish28.jpg";
 
 
 export default function Home() {
@@ -9,6 +14,9 @@ export default function Home() {
     return (
 
         <div className="home">
+
+            <Header></Header>
+
               <a name='header'></a>
 
 
@@ -26,6 +34,39 @@ export default function Home() {
     </p>
 
     </div>
+
+    <div className="gallerysection">
+
+        <h2>Gallery</h2>
+
+        <hr></hr>
+
+        <div className="preview">
+
+        <div>
+            <img src={finish13}></img>
+        </div>
+        <div>        
+            <img src={finish11}></img>
+        </div>
+        <div>
+            <img src={finish28}></img>
+        </div>
+
+        </div>
+
+    </div>
+
+        <div className="gallerylink">
+        
+        <Link to="/gallery"
+        onClick={() => {
+            window.scrollTo(0, 0);
+        }}
+        ><h3 className="more"><FontAwesomeIcon className="fa-xlg plus" icon={faPlus}></FontAwesomeIcon>See more</h3></Link>
+
+        </div>
+
 
     <div className="contact">
 

@@ -1,136 +1,41 @@
 import React from "react";
 import Logo from "../logo/logo.jpg";
-import { Container, NavItem } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { Navbar } from 'react-bootstrap';
+import { NavLink } from "react-router-dom";
 
-export default function Header({ currentPage, handlePageChange }) {
+
+export default function Header() {
 
     window.onscroll = function() {
         scroll();
     };
-
-    function registerClick() {
-        if (registerClick) {
-            document.querySelector(".show").style.left = "-100%";    
-        }
-    };
-
-    function showNavigation() {
-        if (showNavigation) {
-            document.querySelector(".show").style.left = "0";
-            document.querySelector(".collapsing").style.height = "100vh";
-            document.getElementById("popout").className = "scrolled"; 
-        }  
-    }
 
     function scroll() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("head").style.top = "-25px";
             document.getElementById("logo").style.width = "100px"; 
             document.getElementById("logo").style.height = "90px";
-            document.querySelector(".nav-link").style.fontSize = "16px";
-            document.querySelector(".active").style.fontSize = "16px";
-            document.querySelector(".nav-link").style.transition = ".5s ease-in-out";
-            document.querySelector(".active").style.transition = ".5s ease-in-out";
-            document.querySelector(".nav-item").style.marginTop = "25px";
-            document.querySelector(".nav-item").style.transition = ".4s ease-in-out";
+            document.getElementById("logo").style.marginTop = "35px";
         }  else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
             document.getElementById("head").style.top = "0"; 
             document.getElementById("logo").style.height = "110px";
             document.getElementById("logo").style.width = "120px";
-            document.querySelector(".nav-link").style.fontSize = "20px";
-            document.querySelector(".active").style.fontSize = "20px";
-            document.querySelector(".nav-item").style.marginTop = "0";
+            document.getElementById("logo").style.marginTop = "20px";
         } 
     }
 
-    return (
-    <>
-    <div id="head">
-
-        <NavItem className="navlogo">
-                    <img id="logo" src={Logo}></img>
-                    </NavItem>
-
-            <Navbar expand="lg" className="navbar-light">
-
-            <Container className="navbar-container">
-
-                <Nav variant="tabs" className="nav-tabs .d-lg-flex">
+return (
+        <>
+            <div id="head">
                 
-                <Navbar.Collapse className="show" id="popout">
+
+                <NavLink to="/" 
+                onClick={() => {
+                    window.scrollTo(0, 0);
+                }}><img id="logo" src={Logo}></img></NavLink>
             
-            <ul>
-
-            <div className="nav-items">
-
-                <li> 
-
-                <NavItem>
 
 
-            <a href="#home" onClick={() => 
-            {registerClick();
-            handlePageChange("Home");}}
-            className={currentPage === "Home" ? "nav-link active" : "nav-link"}>
-       
-            Home
-            </a>
-
-            </NavItem>
-
-             </li>
-
-             <li> 
-
-             </li>
-
-            <li> 
-
-            <NavItem>
-           
-                <a
-
-            href="#gallery"
-            onClick={() => 
-            {registerClick();
-            handlePageChange("Gallery");}}
-            className={currentPage === "Gallery" ? "nav-link active" : "nav-link"}
-            >
-            Gallery
-
-                </a>
-
-                </NavItem>
-
-                </li>
-
-                </div>
-
-                </ul> 
-
-              </Navbar.Collapse>
-
-
-            </Nav>
-
-        
-
-        <div className="toggler hidden-lg navbar-dark pull-left">
-
-
-        <Navbar.Toggle onClick={showNavigation}/>
-
-
-        </div>
-       
-
-        </Container>
-
-        </Navbar>
-
-    </div>
-</>
-    )
-}
+            </div>
+        </>
+        )
+    }
