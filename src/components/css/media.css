@@ -1,78 +1,65 @@
 @media screen and (max-width: 1799px) {
     .column img {
         width: 800px;
-        height: 700px;
+        height: 800px;
     }
 }
 
 @media screen and (max-width: 1599px) {
     .column img {
         width: 700px;
-        height: 600px;
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .hrline {
+        width: 800px;
+    }
+    .column img {
+        width: 800px;
+        height: 800px;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .row {
+        margin-top: 50px;
     }
 }
 
 @media screen and (max-width: 1199px) {
     .column img {
         width: 750px;
-        height: 600px;
+        height: 750px;
     }
-    .row {
-        margin-top: 5%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-.navbar-expand-lg {
-    width: 100%;
-    height: 100%;
+    .hrline {
+        width: 750px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-collapse {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #1a1a1a;
-        top: 0px;
-        left: -100%;
-        text-align: center;
-        transition: left .4s ease-in-out;
-      }
-
-      nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-      }
-    .nav-link {
-        width: 10%;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 30px;
-    }
-    .nav-items {
-        display: block;
-    }
-    .navbar-toggler.collapsed {
-        margin-top: 6%;
-    }
-    .navbar-toggler {
-        margin-top: 6%;
-    }
     .home > div > p {
-        width: 80%;
-    }
-    .hrline {
-        width: 80%;
+        width: 750px;
     }
     .contact {
-        width: 80%;
+        width: 750px;
     }
     .contact > h2 {
         width: 25%;
     }
+    .aboutsection > hr { 
+        width: 750px;
+      }
+      .gallerysection > hr {
+        width: 750px;
+      }
+      .preview > div > img {
+        width: 750px;
+        height: 750px;
+      }
+      .more {
+        width: 750px;
+      }
     .copyright {
         margin-top: 200px;
     }
@@ -82,6 +69,32 @@
     .contact > h2 {
         width: 30%;
     }
+    .home > div > p {
+        width: 650px;
+    }
+    .contact {
+        width: 650px;
+    }
+    .column img {
+        width: 650px;
+        height: 650px;
+    }
+    .hrline {
+        width: 650px;
+    }
+    .aboutsection > hr { 
+        width: 650px;
+      }
+      .gallerysection > hr {
+        width: 650px;
+      }
+      .preview > div > img {
+        width: 650px;
+        height: 650px;
+      }
+      .more {
+        width: 650px;
+      }
 }
 
 @media screen and (max-width: 797px) {
@@ -90,30 +103,33 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .navbar-toggler.collapsed {
-        margin-top: 40px;
+@media screen and (max-width: 699px) {
+    .home > div > p {
+        width: 550px;
     }
-}
-
-@media screen and (max-width: 760px) {
-    .column img {
-        width: 650px;
-        height: 500px;
+    .contact {
+        width: 550px;
     }
-}
-
-@media screen and (max-width: 666px) {
-    .contact > h2 {
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 655px) {
     .column img {
         width: 550px;
-        height: 400px;
+        height: 550px;
     }
+    .hrline {
+        width: 550px;
+    }
+    .aboutsection > hr { 
+        width: 550px;
+      }
+      .gallerysection > hr {
+        width: 550px;
+      }
+      .preview > div > img {
+        width: 550px;
+        height: 550px;
+      }
+      .more {
+        width: 550px;
+      }
 }
 
 @media screen and (max-width: 609px) {
@@ -122,30 +138,109 @@
     }
 }
 
-@media screen and (max-width: 590px) {
-    .navbar-toggler.collapsed {
-       margin-left: 90%;
+@media screen and (max-width: 599px) {
+    .home > div > p {
+        width: 500px;
     }
-    .nav-link.active {
-        width: 13%;
+    .contact {
+        width: 500px;
+    }
+    .column img {
+        width: 500px;
+        height: 500px;
+    }
+    .hrline {
+        width: 500px;
+    }
+    .aboutsection > hr { 
+        width: 500px;
+      }
+      .gallerysection > hr {
+        width: 500px;
+      }
+      .preview > div > img {
+        width: 500px;
+        height: 500px;
+      }
+      .more {
+        width: 500px;
+      }
+      .contact > h2 {
+        width: 35%;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .navbar-toggler.collapsed {
-       margin-left: 380px;
+    .column img {
+        width: 500px;
+        height: 500px;
+    }
+    .hrline {
+        width: 495px;
     }
 }
 
 @media screen and (max-width: 555px) {
+    .home > div > p {
+        width: 450px;
+    }
+    .contact {
+        width: 450px;
+    }
     .column img {
         width: 450px;
-        height: 300px;
+        height: 450px;
     }
-    .contact > h2 {
-        width: 40%;
+    .hrline {
+        width: 450px;
     }
+    .aboutsection > hr { 
+        width: 450px;
+      }
+      .gallerysection > hr {
+        width: 450px;
+      }
+      .preview > div > img {
+        width: 450px;
+        height: 450px;
+      }
+      .more {
+        width: 450px;
+      }
 }
+
+@media screen and (max-width: 499px) {
+    .home > div > p {
+        width: 400px;
+    }
+    .contact {
+        width: 400px;
+    }
+    .content {
+        margin-top: 50px;
+    }
+    .column img {
+        width: 400px;
+        height: 400px;
+    }
+    .hrline {
+        width: 400px;
+    }
+    .aboutsection > hr { 
+        width: 400px;
+      }
+      .gallerysection > hr {
+        width: 400px;
+      }
+      .preview > div > img {
+        width: 400px;
+        height: 400px;
+      }
+      .more {
+        width: 400px;
+      }
+}
+
 
 @media screen and (max-width: 474px) {
     .contact > h2 {
@@ -159,23 +254,34 @@
     }
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 440px) {
+    .home > div > p {
+        width: 350px;
+    }
+    .contact {
+        width: 350px;
+    }
     .column img {
         width: 350px;
-        height: 250px;
+        height: 350px;
     }
-    .navbar-toggler.collapsed {
-        margin-left: 350px;
+    .hrline {
+        width: 350px;
     }
+    .aboutsection > hr { 
+        width: 350px;
+      }
+      .gallerysection > hr {
+        width: 350px;
+      }
+      .preview > div > img {
+        width: 350px;
+        height: 350px;
+      }
+      .more {
+        width: 350px;
+      }
 }
-
-
-@media screen and (max-width: 455px) {
-    .navbar-toggler.collapsed {
-        margin-left: 300px;
-    }
-}
-
 
 @media screen and (max-width: 415px) {
     .contact > h2 {
@@ -184,8 +290,30 @@
 }
 
 @media screen and (max-width: 355px) {
+    .home > div > p {
+        width: 300px;
+    }
+    .contact {
+        width: 300px;
+    }
     .column img {
         width: 300px;
-        height: 200px;
+        height: 300px;
     }
+    .hrline {
+        width: 300px;
+    }
+    .aboutsection > hr { 
+        width: 300px;
+      }
+      .gallerysection > hr {
+        width: 300px;
+      }
+      .preview > div > img {
+        width: 300px;
+        height: 300px;
+      }
+      .more {
+        width: 300px;
+      }
 }

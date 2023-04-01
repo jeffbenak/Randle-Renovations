@@ -24,7 +24,7 @@ export default function Home() {
 
     <h2>About Us</h2>
 
-    <hr className="hrline"></hr>
+    <hr></hr>
 
     <p>
     Randle Carpentry was proudly founded in 2020, with over 10 years of experience in the field. 
