@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 1399px) {
-    .hrline {
+    .hr-line {
         width: 800px;
     }
     .column img {
@@ -32,7 +32,7 @@
         width: 750px;
         height: 750px;
     }
-    .hrline {
+    .hr-line {
         width: 750px;
     }
 }
@@ -47,10 +47,10 @@
     .contact > h2 {
         width: 25%;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 750px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 750px;
       }
       .preview > div > img {
@@ -79,13 +79,13 @@
         width: 650px;
         height: 650px;
     }
-    .hrline {
+    .hr-line {
         width: 650px;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 650px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 650px;
       }
       .preview > div > img {
@@ -114,13 +114,13 @@
         width: 550px;
         height: 550px;
     }
-    .hrline {
+    .hr-line {
         width: 550px;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 550px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 550px;
       }
       .preview > div > img {
@@ -149,13 +149,13 @@
         width: 500px;
         height: 500px;
     }
-    .hrline {
+    .hr-line {
         width: 500px;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 500px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 500px;
       }
       .preview > div > img {
@@ -175,7 +175,7 @@
         width: 500px;
         height: 500px;
     }
-    .hrline {
+    .hr-line {
         width: 495px;
     }
 }
@@ -191,13 +191,13 @@
         width: 450px;
         height: 450px;
     }
-    .hrline {
+    .hr-line {
         width: 450px;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 450px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 450px;
       }
       .preview > div > img {
@@ -223,13 +223,13 @@
         width: 400px;
         height: 400px;
     }
-    .hrline {
+    .hr-line {
         width: 400px;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 400px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 400px;
       }
       .preview > div > img {
@@ -265,13 +265,13 @@
         width: 350px;
         height: 350px;
     }
-    .hrline {
+    .hr-line {
         width: 350px;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 350px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 350px;
       }
       .preview > div > img {
@@ -300,13 +300,13 @@
         width: 300px;
         height: 300px;
     }
-    .hrline {
+    .hr-line {
         width: 300px;
     }
-    .aboutsection > hr { 
+    .about-section > hr { 
         width: 300px;
       }
-      .gallerysection > hr {
+      .gallery-section > hr {
         width: 300px;
       }
       .preview > div > img {

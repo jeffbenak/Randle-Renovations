@@ -116,7 +116,7 @@ export default function Gallery() {
 
     </div>
 
-    <p className="copyrightgallery">Copyright &#169; 2023 Randle Carpentry. All Rights Reserved. </p>
+    <p className="copyright-gallery">Copyright &#169; 2025 Randle Carpentry. All Rights Reserved. </p>
 
         </div>
         </>
