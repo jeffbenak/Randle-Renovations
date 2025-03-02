@@ -60,12 +60,12 @@ hr {
     color: white;
 }
 
-.aboutsection > h2 {
+.about-section > h2 {
   padding-top: 210px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.aboutsection > hr { 
+.about-section > hr { 
   width: 850px;
 }
 
@@ -79,15 +79,15 @@ hr {
     font-size: 18px;
 }
 
-.gallerysection {
+.gallery-section {
   margin-top: 90px;
 }
 
-.gallerysection > h2 {
+.gallery-section > h2 {
   font-family: 'Oswald', sans-serif;
 }
 
-.gallerysection > hr {
+.gallery-section > hr {
   width: 850px;
 }
 
@@ -127,7 +127,7 @@ hr {
   color: rgb(44, 82, 248);
 }
 
-.hrline {
+.hr-line {
     margin-top: 25px;
     width: 850px;
 }
@@ -177,7 +177,7 @@ hr {
     color: rgb(44, 82, 248);
   }
   
-  .backtotop {
+  .back-to-top {
     color: white;
     margin-bottom: 2%;
   }
@@ -208,7 +208,7 @@ hr {
     height: 900px;
   }
 
-  .copyrightgallery {
+  .copyright-gallery {
     padding-bottom: 50px;
   }
 

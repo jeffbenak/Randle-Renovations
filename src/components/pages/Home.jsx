@@ -20,7 +20,7 @@ export default function Home() {
               <a name='header'></a>
 
 
-    <div className="aboutsection">
+    <div className="about-section">
 
     <h2>About Us</h2>
 
@@ -35,7 +35,7 @@ export default function Home() {
 
     </div>
 
-    <div className="gallerysection">
+    <div className="gallery-section">
 
         <h2>Gallery</h2>
 
@@ -57,7 +57,7 @@ export default function Home() {
 
     </div>
 
-        <div className="gallerylink">
+        <div className="gallery-link">
         
         <Link to="/gallery"
         onClick={() => {
@@ -83,7 +83,7 @@ export default function Home() {
     </div>
 
 
-    <p className="copyright">Copyright &#169; 2023 Randle Carpentry. All Rights Reserved. </p>
+    <p className="copyright">Copyright &#169; 2025 Randle Carpentry. All Rights Reserved. </p>
 
  
 

@@ -43,7 +43,7 @@ export default function Gallery() {
 
             <h1>Gallery</h1>
 
-            <hr className="hrline"></hr>
+            <hr className="hr-line"></hr>
 
             <div className="row">
                 <div className="column">
