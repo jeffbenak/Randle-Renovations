@@ -5,8 +5,8 @@ import { faPhone, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
 import finish11 from "../images/finish11.jpg";
-import finish13 from "../images/finish13.jpg";
-import finish28 from "../images/finish28.jpg";
+import bathroom4 from "../images/Bathrooms/bathroom-4.jpg";
+import bathroom12 from "../images/Bathrooms/bathroom-12.jpg";
 
 
 export default function Home() {
@@ -44,13 +44,13 @@ export default function Home() {
         <div className="preview">
 
         <div>
-            <img src={finish13}></img>
+            <img src={bathroom4}></img>
         </div>
         <div>        
             <img src={finish11}></img>
         </div>
         <div>
-            <img src={finish28}></img>
+            <img src={bathroom12}></img>
         </div>
 
         </div>
