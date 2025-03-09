@@ -151,7 +151,7 @@ export default function Gallery() {
 
     </div>
 
-    <p className="copyright-gallery">Copyright &#169; 2025 Randle Carpentry. All Rights Reserved. </p>
+    <p className="copyright-gallery">Copyright &#169; 2025 Randle Renovations. All Rights Reserved. </p>
 
         </div>
         </>

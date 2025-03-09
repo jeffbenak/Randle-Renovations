@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faPlus, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
 import finish11 from "../images/finish11.jpg";
@@ -74,16 +74,16 @@ export default function Home() {
 
         <div className="content">
 
-        <p>Email: <a className="email" href="mailto:MRandleCarpentry@gmail.com">MRandleCarpentry@gmail.com</a></p>
+        <p><FontAwesomeIcon className="fa-xl envelope" icon={faEnvelope}></FontAwesomeIcon><a className="email" href="mailto:MRandleCarpentry@gmail.com">MRandleCarpentry@gmail.com</a></p>
+        <p><FontAwesomeIcon className="fa-xl" icon={faFacebook}></FontAwesomeIcon><a href="https://www.facebook.com/profile.php?id=100077916173261" className="social facebook">Randle Renovations</a></p>
         <p><FontAwesomeIcon className="fa-xl" icon={faPhone}></FontAwesomeIcon><a href="tel:+17739721844" className="social">773-972-1844</a></p>
-        <p><FontAwesomeIcon className="fa-xl" icon={faFacebook}></FontAwesomeIcon><a href="https://www.facebook.com/profile.php?id=100077916173261" className="social facebook">Randle Carpentry</a></p>
 
         </div>
 
     </div>
 
 
-    <p className="copyright">Copyright &#169; 2025 Randle Carpentry. All Rights Reserved. </p>
+    <p className="copyright">Copyright &#169; 2025 Randle Renovations. All Rights Reserved. </p>
 
  
 

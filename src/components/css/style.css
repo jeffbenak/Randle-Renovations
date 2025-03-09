@@ -120,7 +120,7 @@ hr {
 
 .email {
     color: white;
-    margin-left: .3%;
+    margin-left: 10px;
 }
 
 .email:hover {
@@ -170,7 +170,7 @@ hr {
 
   .social {
     color: white;
-    margin-left: 1%;
+    margin-left: 10px;
   }
 
   .social:hover {
