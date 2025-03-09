@@ -52,7 +52,7 @@ hr {
   height: 105px;
   width: 115px;
   margin-top: 20px;
-  border-radius: 50%;
+  border-radius: 10px;
   transition: .5s ease-in-out;
 }
 
