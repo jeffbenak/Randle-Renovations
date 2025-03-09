@@ -27,7 +27,7 @@ export default function Home() {
     <hr></hr>
 
     <p>
-    Randle Carpentry was proudly founded in 2020, with over 10 years of experience in the field. 
+    Randle Renovations was proudly founded in 2020, with over 10 years of experience in the field. 
     We specialize in many aspects of carpentry and remodeling projects. We promise to deliver a 
     quality finished project that you can enjoy for years to come! Please call, text, or email 
     to get your project started!
