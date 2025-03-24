@@ -1,0 +1,108 @@
+.image-container {
+    position: relative;
+    width: 850px;
+    height: 850px;
+    margin: auto;
+    overflow: hidden;
+    transition: all 2s;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.overlay-title {
+    font-size: 50px;
+    margin-bottom: 0;
+    opacity: 0;
+}
+.overlay-button {
+    padding: 10px 30px;
+    font-size: 24px;
+    background: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: 2px solid white;
+    opacity: 0;
+}
+.bathroom-image {
+    transition: filter .5s ease;
+    margin-top: 0 !important;
+}
+.overlay-button:hover {
+    background: transparent;
+    color: white;
+}
+.image-container:hover .bathroom-image {
+    opacity: 0.5;
+    filter: blur(2px);
+  }
+  .image-container:hover .overlay {
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.589);
+  }
+  .overlay-hr {
+    border-top: 1px solid white;
+    width: 300px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    opacity: 0;
+  }
+  .image-container:hover .overlay-title {
+    animation: fadeInLeft .7s ease forwards;
+  }
+  
+  .image-container:hover .overlay-hr {
+    animation: fadeInUp .7s ease forwards;
+    animation-delay: .7s;
+  }
+  
+  .image-container:hover .overlay-button {
+    animation: fadeInRight .7s ease forwards;
+    animation-delay: 1.3s;
+  }
+
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(500px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -9,7 +9,13 @@ import bathroom4 from "../images/Bathrooms/bathroom-4.jpg";
 import bathroom12 from "../images/Bathrooms/bathroom-12.jpg";
 
 
+
 export default function Home() {
+
+
+        const handleButtonClick = () => {
+          alert('Button clicked!');
+        };
 
     return (
 
@@ -43,8 +49,13 @@ export default function Home() {
 
         <div className="preview">
 
-        <div>
-            <img src={bathroom4}></img>
+        <div className="image-container">
+            <img className="bathroom-image" src={bathroom4}></img>
+            <div className="overlay">
+                <h2 class="overlay-title">Bathrooms</h2>
+                <hr className="overlay-hr"></hr>
+                <button onClick={handleButtonClick} class="overlay-button">See More</button>
+            </div>
         </div>
         <div>        
             <img src={finish11}></img>
