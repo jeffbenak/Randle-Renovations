@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/*"
+to = "https://randlerenovations.com/:splat"
+status = 301
+force = true
