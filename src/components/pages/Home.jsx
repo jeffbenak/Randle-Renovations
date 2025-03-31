@@ -33,10 +33,9 @@ export default function Home() {
     <hr></hr>
 
     <p>
-    Randle Renovations was proudly founded in 2020, with over 10 years of experience in the field. 
-    We specialize in many aspects of carpentry and remodeling projects. We promise to deliver a 
-    quality finished project that you can enjoy for years to come! Please call, text, or email 
-    to get your project started!
+    Since 2020, Randle Renovations has been transforming homes through expert interior remodeling, building on over a decade of prior experience in the field.
+    We specialize in bringing your vision to life, with meticulous craftsmanship in key areas such as bathrooms, kitchens, flooring, doors, trim, and tile.
+    Our commitment to quality and attention to detail ensure that every project—whether a simple update or a full renovation—is completed to the highest standards, resulting in beautiful, functional spaces our clients love.
     </p>
 
     </div>
