@@ -1,5 +1,5 @@
 [[redirects]]
   from = "https://randlecarpentry.com/"
-  to = "https://randlerenovations.com/:splat"
+  to = "https://randlerenovations.com/"
   status = 301
   force = true
