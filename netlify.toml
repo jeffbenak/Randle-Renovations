@@ -3,3 +3,4 @@
   to = "https://randlerenovations.com/:splat"
   status = 301
   force = true
+  conditions = { Host = "randlecarpentry.com" }
