@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/.well-known/acme-challenge/*"
+  to = "/.well-known/acme-challenge/:splat"
+  status = 200
+  conditions = { Host = "randlecarpentry.com" }
+
+[[redirects]]
+  from = "/*"
+  to = "https://randlerenovations.com/:splat"
+  status = 301
+  force = true
+  conditions = { Host = "randlecarpentry.com" }
