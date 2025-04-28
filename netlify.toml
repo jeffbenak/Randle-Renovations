@@ -1,3 +1,6 @@
+[build]
+  publish = "build"
+
 [[redirects]]
   from = "/.well-known/acme-challenge/*"
   to = "/.well-known/acme-challenge/:splat"
