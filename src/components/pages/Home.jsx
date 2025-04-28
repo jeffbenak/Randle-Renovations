@@ -53,7 +53,7 @@ export default function Home() {
             <div className="overlay">
                 <h2 class="overlay-title">Bathrooms</h2>
                 <hr className="overlay-hr"></hr>
-                <Link to="/Bathrooms">
+                <Link to="/bathrooms">
                 <button class="overlay-button">See More</button>
                 </Link>
             </div>
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="overlay">
                 <h2 class="overlay-title">Built Ins</h2>
                 <hr className="overlay-hr"></hr>
-                <Link to="/Builtins">
+                <Link to="/builtins">
                 <button class="overlay-button">See More</button>
                 </Link>
             </div>
@@ -81,7 +81,7 @@ export default function Home() {
             <div className="overlay">
                 <h2 class="overlay-title">Floors/Stairs</h2>
                 <hr className="overlay-hr"></hr>
-                <Link to="/Floorstairs">
+                <Link to="/floorstairs">
                 <button class="overlay-button">See More</button>
                 </Link>
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="overlay">
                 <h2 className="overlay-title">Kitchens</h2>
                 <hr className="overlay-hr"></hr>
-                <Link to="/Kitchens">
+                <Link to="/kitchens">
                 <button class="overlay-button">See More</button>
                 </Link>
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="overlay">
                 <h2 className="overlay-title">Trim Doors</h2>
                 <hr className="overlay-hr"></hr>
-                <Link to="/Trimdoors">
+                <Link to="/trimdoors">
                 <button class="overlay-button">See More</button>
                 </Link>
             </div>
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="overlay">
                 <h2 className="overlay-title">Other Projects</h2>
                 <hr className="overlay-hr"></hr>
-                <Link to="/Otherprojects">
+                <Link to="/otherprojects">
                 <button class="overlay-button">See More</button>
                 </Link>
             </div>
