@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header";
-import other1 from "../images/Other-projects/other-1.jpg";
-import other2 from "../images/Other-projects/other-2.jpg";
-import other3 from "../images/Other-projects/other-3.jpg";
-import other4 from "../images/Other-projects/other-4.jpg";
-import other5 from "../images/Other-projects/other-5.jpg";
+import other1 from "../images/Other-Projects/other-1.jpg";
+import other2 from "../images/Other-Projects/other-2.jpg";
+import other3 from "../images/Other-Projects/other-3.jpg";
+import other4 from "../images/Other-Projects/other-4.jpg";
+import other5 from "../images/Other-Projects/other-5.jpg";
 
 
 
