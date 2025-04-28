@@ -1,36 +1,39 @@
-@media screen and (max-width: 1799px) {
-    .column img {
+@media screen and (max-width: 1850px) {
+    .preview {
+        width: auto !important;
+        margin: auto;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .preview > div > img {
+        height: auto;
+    }
+    .image-container {
         width: 800px;
-        height: 800px;
+        margin: auto;
+    }
+    .gallery-section > hr {
+        width: 700px;
+        margin-bottom: 50px;
     }
 }
 
-@media screen and (max-width: 1599px) {
-    .column img {
-        width: 700px;
-        height: 700px;
-    }
-}
 
 @media screen and (max-width: 1399px) {
-    .hr-line {
-        width: 800px;
-    }
-    .column img {
-        width: 800px;
-        height: 800px;
-        padding: 0;
-        margin-top: 10px;
-    }
     .row {
         margin-top: 50px;
     }
 }
 
 @media screen and (max-width: 1199px) {
-    .column img {
-        width: 750px;
-        height: 750px;
+    .overlay, .overlay-button, .overlay-title, .overlay-hr {
+        opacity: 1 !important;
+    }
+    .section-image {
+        opacity: 0.5;
+    }
+    .image-container:hover .overlay-title, .image-container:hover .overlay-hr, .image-container:hover .overlay-button {
+        animation: none !important;
     }
     .hr-line {
         width: 750px;
@@ -38,282 +41,41 @@
 }
 
 @media screen and (max-width: 991px) {
-    .home > div > p {
-        width: 750px;
+    .preview {
+        margin-bottom: 50px !important;
+    }
+    .image-container {
+        width: 90%;
+    }
+    .about-section {
+        width: 85%;
+    }
+    .about-section > hr {
+        width: 90%;
+    }
+    .gallery-section > hr {
+        width: 80%;
     }
     .contact {
-        width: 750px;
+        width: 90%;
+        margin-top: 80px;
     }
     .contact > h2 {
         width: 25%;
     }
-    .about-section > hr { 
-        width: 750px;
-      }
-      .gallery-section > hr {
-        width: 750px;
-      }
-      .preview > div > img {
-        width: 750px;
-        height: 750px;
-      }
       .more {
         width: 750px;
       }
-    .copyright {
-        margin-top: 200px;
-    }
-}
-
-@media screen and (max-width: 836px) {
-    .contact > h2 {
-        width: 30%;
-    }
-    .home > div > p {
-        width: 650px;
-    }
-    .contact {
-        width: 650px;
-    }
-    .column img {
-        width: 650px;
-        height: 650px;
-    }
-    .hr-line {
-        width: 650px;
-    }
-    .about-section > hr { 
-        width: 650px;
-      }
-      .gallery-section > hr {
-        width: 650px;
-      }
-      .preview > div > img {
-        width: 650px;
-        height: 650px;
-      }
-      .more {
-        width: 650px;
+      .section-image {
+        width: 100% !important;
       }
 }
 
-@media screen and (max-width: 797px) {
-    .contact {
-        margin-top: 15%;
+@media screen and (max-width: 750px) {
+    .overlay-title {
+        font-size: 40px !important;
     }
-}
-
-@media screen and (max-width: 699px) {
-    .home > div > p {
-        width: 550px;
+    .overlay-button {
+        font-size: 20px !important;
     }
-    .contact {
-        width: 550px;
-    }
-    .column img {
-        width: 550px;
-        height: 550px;
-    }
-    .hr-line {
-        width: 550px;
-    }
-    .about-section > hr { 
-        width: 550px;
-      }
-      .gallery-section > hr {
-        width: 550px;
-      }
-      .preview > div > img {
-        width: 550px;
-        height: 550px;
-      }
-      .more {
-        width: 550px;
-      }
-}
-
-@media screen and (max-width: 609px) {
-    .copyright {
-        margin-top: 150px;
-    }
-}
-
-@media screen and (max-width: 599px) {
-    .home > div > p {
-        width: 500px;
-    }
-    .contact {
-        width: 500px;
-    }
-    .column img {
-        width: 500px;
-        height: 500px;
-    }
-    .hr-line {
-        width: 500px;
-    }
-    .about-section > hr { 
-        width: 500px;
-      }
-      .gallery-section > hr {
-        width: 500px;
-      }
-      .preview > div > img {
-        width: 500px;
-        height: 500px;
-      }
-      .more {
-        width: 500px;
-      }
-      .contact > h2 {
-        width: 35%;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .column img {
-        width: 500px;
-        height: 500px;
-    }
-    .hr-line {
-        width: 495px;
-    }
-}
-
-@media screen and (max-width: 555px) {
-    .home > div > p {
-        width: 450px;
-    }
-    .contact {
-        width: 450px;
-    }
-    .column img {
-        width: 450px;
-        height: 450px;
-    }
-    .hr-line {
-        width: 450px;
-    }
-    .about-section > hr { 
-        width: 450px;
-      }
-      .gallery-section > hr {
-        width: 450px;
-      }
-      .preview > div > img {
-        width: 450px;
-        height: 450px;
-      }
-      .more {
-        width: 450px;
-      }
-}
-
-@media screen and (max-width: 499px) {
-    .home > div > p {
-        width: 400px;
-    }
-    .contact {
-        width: 400px;
-    }
-    .content {
-        margin-top: 50px;
-    }
-    .column img {
-        width: 400px;
-        height: 400px;
-    }
-    .hr-line {
-        width: 400px;
-    }
-    .about-section > hr { 
-        width: 400px;
-      }
-      .gallery-section > hr {
-        width: 400px;
-      }
-      .preview > div > img {
-        width: 400px;
-        height: 400px;
-      }
-      .more {
-        width: 400px;
-      }
-}
-
-
-@media screen and (max-width: 474px) {
-    .contact > h2 {
-        width: 45%;
-    }
-    .nav-link.active {
-        width: 17%;
-    }
-    .nav-link {
-        width: 17%;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .home > div > p {
-        width: 350px;
-    }
-    .contact {
-        width: 350px;
-    }
-    .column img {
-        width: 350px;
-        height: 350px;
-    }
-    .hr-line {
-        width: 350px;
-    }
-    .about-section > hr { 
-        width: 350px;
-      }
-      .gallery-section > hr {
-        width: 350px;
-      }
-      .preview > div > img {
-        width: 350px;
-        height: 350px;
-      }
-      .more {
-        width: 350px;
-      }
-}
-
-@media screen and (max-width: 415px) {
-    .contact > h2 {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 355px) {
-    .home > div > p {
-        width: 300px;
-    }
-    .contact {
-        width: 300px;
-    }
-    .column img {
-        width: 300px;
-        height: 300px;
-    }
-    .hr-line {
-        width: 300px;
-    }
-    .about-section > hr { 
-        width: 300px;
-      }
-      .gallery-section > hr {
-        width: 300px;
-      }
-      .preview > div > img {
-        width: 300px;
-        height: 300px;
-      }
-      .more {
-        width: 300px;
-      }
 }

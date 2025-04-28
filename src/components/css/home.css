@@ -1,8 +1,6 @@
 .image-container {
     position: relative;
-    width: 850px;
-    height: 850px;
-    margin: auto;
+    height: auto;
     overflow: hidden;
     transition: all 2s;
   }
@@ -37,18 +35,18 @@
     border: 2px solid white;
     opacity: 0;
 }
-.bathroom-image {
-    transition: filter .5s ease;
+.section-image {
+    transition: filter .5s ease, opacity .5s ease;
     margin-top: 0 !important;
 }
 .overlay-button:hover {
     background: transparent;
     color: white;
 }
-/* .image-container:hover .bathroom-image {
+.image-container:hover .section-image {
     opacity: 0.5;
     filter: blur(2px);
-  } */
+  }
   .image-container:hover .overlay {
     opacity: 1;
     border: 1px solid rgba(255, 255, 255, 0.589);
@@ -61,17 +59,27 @@
     opacity: 0;
   }
   .image-container:hover .overlay-title {
-    animation: fadeInLeft .7s ease forwards;
+    animation: fadeInLeft .5s ease forwards;
   }
   
   .image-container:hover .overlay-hr {
-    animation: fadeInUp .7s ease forwards;
-    animation-delay: .7s;
+    animation: fadeInUp .5s ease forwards;
+    animation-delay: .5s;
   }
   
   .image-container:hover .overlay-button {
-    animation: fadeInRight .7s ease forwards;
-    animation-delay: 1.3s;
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .8s;
+  }
+
+
+  .preview {
+    display: flex;
+    width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+    justify-content: space-between;
   }
 
 
@@ -107,3 +115,15 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+

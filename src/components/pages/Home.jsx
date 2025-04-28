@@ -1,21 +1,21 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import Header from "./Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faPlus, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { Link } from "react-router-dom";
-import finish11 from "../images/finish11.jpg";
-import bathroom4 from "../images/Bathrooms/bathroom-4.jpg";
-import bathroom12 from "../images/Bathrooms/bathroom-12.jpg";
+import builtIn from "../images/Built-Ins/built-in-3.jpg";
+import bathroom from "../images/Bathrooms/bathroom-4.jpg";
+import stairs from "../images/Floor-Stairs/floor-stairs-1.jpg";
+import kitchen from "../images/Kitchens/kitchen-1.jpg";
+import trimdoors from "../images/Trim-Doors/trim-doors-3.jpg";
+import otherprojects from "../images/Other-Projects/other-3.jpg";
+
 
 
 
 export default function Home() {
 
-
-        const handleButtonClick = () => {
-          alert('Button clicked!');
-        };
 
     return (
 
@@ -33,7 +33,7 @@ export default function Home() {
     <hr></hr>
 
     <p>
-    Since 2020, Randle Renovations has been transforming homes through expert interior remodeling, building on over a decade of prior experience in the field.
+    Since 2020, Randle Renovations has been transforming homes through expert interior remodeling, building upon over a decade of prior experience in the field.
     We specialize in bringing your vision to life, with meticulous craftsmanship in key areas such as bathrooms, kitchens, flooring, doors, trim, and tile.
     Our commitment to quality and attention to detail ensure that every project—whether a simple update or a full renovation—is completed to the highest standards, resulting in beautiful, functional spaces our clients love.
     </p>
@@ -42,40 +42,101 @@ export default function Home() {
 
     <div className="gallery-section">
 
-        <h2>Gallery</h2>
+        <h2>Our Work</h2>
 
         <hr></hr>
 
         <div className="preview">
 
         <div className="image-container">
-            <img className="bathroom-image" src={bathroom4}></img>
-            {/* <div className="overlay">
+            <img className="section-image" src={bathroom}></img>
+            <div className="overlay">
                 <h2 class="overlay-title">Bathrooms</h2>
                 <hr className="overlay-hr"></hr>
-                <button onClick={handleButtonClick} class="overlay-button">See More</button>
-            </div> */}
+                <Link to="/Bathrooms">
+                <button class="overlay-button">See More</button>
+                </Link>
+            </div>
         </div>
-        <div>        
-            <img src={finish11}></img>
-        </div>
-        <div>
-            <img src={bathroom12}></img>
+        
+        <div className="image-container">
+            <img className="section-image" src={builtIn}></img>
+            <div className="overlay">
+                <h2 class="overlay-title">Built Ins</h2>
+                <hr className="overlay-hr"></hr>
+                <Link to="/Builtins">
+                <button class="overlay-button">See More</button>
+                </Link>
+            </div>
         </div>
 
         </div>
+
+
+
+        <div className="preview">
+
+        <div className="image-container">
+            <img className="section-image" src={stairs}></img>
+            <div className="overlay">
+                <h2 class="overlay-title">Floors/Stairs</h2>
+                <hr className="overlay-hr"></hr>
+                <Link to="/Floorstairs">
+                <button class="overlay-button">See More</button>
+                </Link>
+            </div>
+        </div>
+
+        
+        <div className="image-container">
+            <img className="section-image" src={kitchen}></img>
+            <div className="overlay">
+                <h2 className="overlay-title">Kitchens</h2>
+                <hr className="overlay-hr"></hr>
+                <Link to="/Kitchens">
+                <button class="overlay-button">See More</button>
+                </Link>
+            </div>
+        </div>
+
+        </div>
+
+
+        <div className="preview">
+
+
+
+        <div className="image-container">
+            <img className="section-image" src={trimdoors}></img>
+            <div className="overlay">
+                <h2 className="overlay-title">Trim Doors</h2>
+                <hr className="overlay-hr"></hr>
+                <Link to="/Trimdoors">
+                <button class="overlay-button">See More</button>
+                </Link>
+            </div>
+        </div>
+
+
+        <div className="image-container">
+            <img className="section-image" src={otherprojects}></img>
+            <div className="overlay">
+                <h2 className="overlay-title">Other Projects</h2>
+                <hr className="overlay-hr"></hr>
+                <Link to="/Otherprojects">
+                <button class="overlay-button">See More</button>
+                </Link>
+            </div>
+        </div>
+
+
+
+        </div>
+
+        
 
     </div>
 
-        <div className="gallery-link">
-        
-        <Link to="/gallery"
-        onClick={() => {
-            window.scrollTo(0, 0);
-        }}
-        ><h3 className="more"><FontAwesomeIcon className="fa-xlg plus" icon={faPlus}></FontAwesomeIcon>See more</h3></Link>
-
-        </div>
 
 
     <div className="contact">
