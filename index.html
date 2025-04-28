@@ -9,7 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="/src/components/favicon/favicon.ico" type="image/x-icon"/>
-    <title>Randle Renovations</title>
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        let pageTitle = 'Randle Renovations';
+  
+        if (path.includes('bathrooms')) {
+          pageTitle = 'Bathrooms';
+        }
+        if (path.includes('builtins')) {
+          pageTitle = 'Built-Ins';
+        }
+        if (path.includes('floorstairs')) {
+          pageTitle = 'Floors/Stairs';
+        }
+        if (path.includes('kitchens')) {
+          pageTitle = 'Kitchens';
+        }
+        if (path.includes('trimdoors')) {
+          pageTitle = 'Trim Doors';
+        }
+        if (path.includes('otherprojects')) {
+          pageTitle = 'Other Projects';
+        }
+        document.title = pageTitle;
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

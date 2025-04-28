@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from "./Header";
+import { Helmet } from 'react-helmet';
 import bathroom1 from "../images/Bathrooms/bathroom-1.jpg";
 import bathroom2 from "../images/Bathrooms/bathroom-2.jpg";
 import bathroom3 from "../images/Bathrooms/bathroom-3.jpg";
@@ -60,6 +61,9 @@ export default function Bathrooms({ imageUrls = [] }) {
 
     return (
         <>
+        <Helmet>
+            <title>Bathrooms</title>
+        </Helmet>
                 <a name="header"></a>
                 <Header></Header>
         <div className="gallery-page">
